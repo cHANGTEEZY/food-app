@@ -9,7 +9,7 @@ const Meals = () => {
     data: meals = [], // Ensure meals is always an array
     isLoading,
     error,
-  } = useHttp("http://localhost:3000/meals", requestConfig, []);
+  } = useHttp("https://food-app-4mho.onrender.com/meals", requestConfig, []);
 
   if (isLoading) return <p className="center">Fetching Meals...</p>;
 

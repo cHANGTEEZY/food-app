@@ -25,7 +25,7 @@ const Checkout = () => {
     error,
     sendRequest,
     clearData,
-  } = useHttp("http://localhost:3000/orders", requestConfig, null);
+  } = useHttp("https://food-app-4mho.onrender.com/orders", requestConfig, null);
 
   const cartTotal = cartCtx.items.reduce(
     (totalPrice, item) => totalPrice + item.quantity * item.price,
